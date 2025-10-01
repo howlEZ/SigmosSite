@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sigmos Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        .custom-gradient-bg {
+            background: 
+                radial-gradient(circle at 50% 0%, rgb(26, 26, 26) 0%, transparent 70%),
+                radial-gradient(circle at 50% 130%, rgb(0, 0, 0) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(73, 43, 156, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 20% 50%, rgba(69, 102, 184, 0.593) 0%, transparent 50%),
+                radial-gradient(circle at 90% 100%, rgba(69, 156, 164, 0.3) 0%, transparent 40%),
+                #f8f9fa;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light custom-gradient-bg">
+
+ <!-- Верхние кнопки -->
+  <div class="border-bottom py-2" >
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-3 small ">
+        <a href="#" class="text-light text-decoration-none">О компании</a>
+        <a href="#" class="text-light text-decoration-none">Доставка</a>
+        <a href="#" class="text-light text-decoration-none">Гарантии</a>
+        <a href="#" class="text-light text-decoration-none">Trade In</a>
+        <a href="#" class="text-light text-decoration-none">Для СМИ и блогеров</a>
+        <a href="#" class="text-light text-decoration-none">Наши контакты</a>
+        <a href="#" class="text-light text-decoration-none">Где нас найти</a>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-light">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M9.99994 15.1998L9.69994 19.3998C10.0999 19.3998 10.2999 19.1998 10.4999 18.9998L12.4999 17.0998L16.6999 20.1998C17.4999 20.5998 18.0999 20.3998 18.2999 19.3998L21.8999 2.99977L21.8999 2.99977C22.0999 1.99977 21.4999 1.59977 20.6999 1.99977L2.49994 9.99977C1.49994 10.3998 1.49994 10.9998 2.29994 11.1998L6.99994 12.5998L17.6999 5.39977C18.1999 5.09977 18.6999 5.29977 18.2999 5.59977L9.99994 15.1998Z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-light">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 3.99992C17.6 1.59992 14.4 0.399922 11 1.19992C5.5 2.49992 1.5 7.99992 2.3 13.5999C2.9 17.8999 6.1 21.3999 10.3 22.3999C12.3 22.8999 14.3 22.7999 16.2 22.1999L21 23.9999L19.8 19.2999C21.1 17.5999 21.9 15.5999 22 13.4999C22.1 9.99992 20.6 6.69992 18 3.99992L20 3.99992ZM17.5 17.0999C16.9 17.6999 15.9 18.3999 14.9 18.1999C14.4 18.0999 13.5 17.7999 12 17.0999C9.8 16.0999 8 14.1999 7 11.8999C6.5 10.6999 6.3 9.69992 6.2 9.19992C6 8.19992 6.7 7.19992 7.3 6.69992C7.6 6.39992 7.9 6.19992 8.2 6.19992C8.5 6.19992 8.7 6.19992 8.9 6.29992C9.2 6.39992 9.5 6.89992 9.7 7.39992C9.9 7.89992 10.3 8.89992 10.4 9.09992C10.6 9.59992 10.4 9.89992 10.2 10.0999C10.1 10.1999 9.9 10.3999 9.8 10.5999C9.7 10.6999 9.6 10.7999 9.7 11.0999C9.9 11.7999 10.4 12.5999 11.1 13.2999C11.8 13.9999 12.7 14.4999 13.4 14.7999C13.7 14.8999 13.9 14.7999 14.1 14.6999C14.3 14.5999 14.8 14.0999 15 13.8999C15.3 13.5999 15.5 13.5999 15.9 13.6999C16.1 13.7999 17.3 14.3999 17.6 14.5999C17.8 14.6999 18 14.7999 18.1 14.8999C18.2 14.9999 18.2 15.1999 18.2 15.2999C18.2 15.4999 18.1 16.5999 17.5 17.0999Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Логотип, поиск и вход в аккаунт -->
+  <div class="container py-3 d-flex justify-content-between align-items-center">
+    <div class="fs-3 fw-bold">Sigmos</div>
+    <form class="flex-grow-1 mx-3">
+      <input type="text" class="form-control" placeholder="Поиск...">
+    </form>
+    <button class="btn btn-outline-light me-2">Каталог</button>
+    <button class="btn btn-outline-light">Войти</button>
+  </div>
+
+  <!-- Меню -->
+  <div class="py-2">
+    <div class="container d-flex justify-content-center gap-4 small">
+      <a href="#" class="text-light text-decoration-none">Рекомендуемое</a>
+      <a href="#" class="text-light text-decoration-none">Скидки</a>
+      <a href="#" class="text-light text-decoration-none">Новинки</a>
+      <a href="#" class="text-light text-decoration-none">Apple</a>
+      <a href="#" class="text-light text-decoration-none">Samsung</a>
+      <a href="#" class="text-light text-decoration-none">Аксессуары</a>
+      <a href="#" class="text-light text-decoration-none">Для дома</a>
+    </div>
+  </div>
+
+  <!-- Слайдер-->
+  <div id="carouselExample" class="carousel slide container mt-4">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/iPhones.png" class="d-block w-100" alt="Placeholder">
+        <div class="carousel-caption d-none d-md-block">
+          <button class="btn btn-dark text-light">Приобрести</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Товары -->
+  <div class="container mt-5" >
+    <div class="row mb-4">
+    <div class="col-12">
+      <h2 class="text fw-bold">Новинки</h2>
+    </div>
+  </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/audio2_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">AirPods 4 (без ANC)</div>
+            <div class="fw-bold fs-5 d-inline">9 990 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">17 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+         <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/phone3_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Samsung Galaxy S25 8/128</div>
+            <div class="fw-bold fs-5 d-inline">62 990 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">99 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/phone2_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Google Pixel 10 Pro 12/256</div>
+            <div class="fw-bold fs-5 d-inline">69 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">149 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/console_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">PlayStation 5 Pro 2Tb</div>
+            <div class="fw-bold fs-5 d-inline">79 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">139 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container mt-5" >
+    <div class="row mb-4">
+    <div class="col-12">
+      <h2 class="text fw-bold">Популярные категории</h2>
+    </div>
+  </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/phone_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <button class="btn btn-dark w-100 mt-3">Мобильные устройства</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/pc_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <button class="btn btn-dark w-100 mt-3">Компьютеры и ноутбуки</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/console2_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <button class="btn btn-dark w-100 mt-3">Игровые консоли</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/audio_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <button class="btn btn-dark w-100 mt-3">Аксессуары</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-12">
+      <h2 class="fw-bold">Наш ассортимент</h2>
+    </div>
+  </div>
+
+  <!-- Табы -->
+  <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+        Актуальное
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+        Со скидкой
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+        Хиты продаж
+      </button>
+    </li>
+  </ul>
+  
+  <div class="tab-content" id="myTabContent">
+    <!-- Таб 1 -->
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row g-4">
+        <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/audio3_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Lunacy Headphones</div>
+            <div class="fw-bold fs-5 d-inline">7 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">19 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/console3_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Xbox Series S 512Gb</div>
+            <div class="fw-bold fs-5 d-inline">29 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">39 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/console4_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Xbox Series X 1Tb</div>
+            <div class="fw-bold fs-5 d-inline">59 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">99 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/console5_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">PlayStation 4 Slim 500 Gb</div>
+            <div class="fw-bold fs-5 d-inline">34 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">49 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/macbook2_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Macbook Air M4 12/256</div>
+            <div class="fw-bold fs-5 d-inline">89 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">129 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/macbook_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">Macbook Air M2 8/256</div>
+            <div class="fw-bold fs-5 d-inline">69 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">100 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/phone5_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">iPhone 15 128Gb</div>
+            <div class="fw-bold fs-5 d-inline">59 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">101 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3"> 
+        <div class="card bg-dark text-light rounded-4 shadow">
+          <img src="./images/phone4_card.png" class="d-block w-100" alt="Placeholder">
+          <div class="card-body">
+            <div class="fw-bold fs-5">iPhone 16 128Gb</div>
+            <div class="fw-bold fs-5 d-inline">62 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">84 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Таб 2 -->
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="row g-4">
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+            <img src="./images/console4_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">Xbox Series X</div>
+            <div class="fw-bold fs-5 d-inline">59 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">99 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+            <img src="./images/audio2_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">AirPods 4 (ANC)</div>
+            <div class="fw-bold fs-5 d-inline">14 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">19 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+            <img src="./images/phone5_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">iPhone 15 128Gb</div>
+            <div class="fw-bold fs-5 d-inline">59 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">101 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+            <img src="./images/phone4_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">iPhone 16 128Gb</div>
+            <div class="fw-bold fs-5 d-inline">62 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">84 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+            <img src="./images/pc2_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">HYPERPC VOLT PRO</div>
+            <div class="fw-bold fs-5 d-inline">159 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">279 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
+            <img src="./images/pc_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">AZZA LUMEN 2X</div>
+            <div class="fw-bold fs-5 d-inline">89 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">149 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Таб 3 -->
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="row g-4">
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Хит</span>
+            <img src="./images/macbook_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">Macbook Air M2 8/256</div>
+            <div class="text-light">Бестселлер</div>
+            <div class="fw-bold fs-5 d-inline">69 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">100 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Хит</span>
+            <img src="./images/console3_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">Xbox Series S</div>
+            <div class="text-light">Бестселлер</div>
+            <div class="fw-bold fs-5 d-inline">29 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">39 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Хит</span>
+            <img src="./images/console_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">PlayStation 5 Pro 2Tb</div>
+            <div class="text-light">Бестселлер</div>
+            <div class="fw-bold fs-5 d-inline">79 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">139 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3"> 
+          <div class="card bg-dark text-light rounded-4 shadow">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Хит</span>
+            <img src="./images/audio_card.png" class="d-block w-100" alt="Placeholder">
+            <div class="card-body">
+            <div class="fw-bold fs-5">AirPods Max</div>
+            <div class="text-light">Бестселлер</div>
+            <div class="fw-bold fs-5 d-inline">45 999 ₽  </div><p class="text-decoration-line-through text-white-50 d-inline">69 999 ₽</p>
+            <button class="btn btn-secondary w-100 mt-3">В корзину</button>
+          </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <!-- Аккордеон -->
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="accordion" id="centeredAccordion">
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              📦 Информация о доставке
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#centeredAccordion">
+            <div class="accordion-body">
+              <p><strong>Сроки доставки:</strong> 1-3 рабочих дня</p>
+              <p><strong>Стоимость:</strong> Бесплатно от 3000 ₽</p>
+              <p><strong>Регионы:</strong> Вся Россия</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              🔄 Условия возврата
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#centeredAccordion">
+            <div class="accordion-body">
+              <p>Возврат товара возможен в течение 14 дней с момента покупки.</p>
+              <p>Товар должен сохранить товарный вид и все бирки.</p>
+              <p>Деньги возвращаются на ту же карту, с которой была оплата.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              ⚡ Способы оплаты
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#centeredAccordion">
+            <div class="accordion-body">
+              <ul class="mb-0">
+                <li>Банковской картой онлайн (Visa, MasterCard, Мир)</li>
+                <li>Наличными при получении</li>
+                <li>Apple Pay / Google Pay</li>
+                <li>Рассрочка от банков-партнеров</li>
+                <li>Электронные кошельки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              🛡️ Гарантия качества
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#centeredAccordion">
+            <div class="accordion-body">
+              <p>На всю технику предоставляется официальная гарантия производителя.</p>
+              <p><strong>Срок гарантии:</strong> от 12 до 24 месяцев в зависимости от категории товара.</p>
+              <p>Сервисные центры расположены во всех крупных городах России.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+              📞 Контакты и поддержка
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#centeredAccordion">
+            <div class="accordion-body">
+              <p><strong>Телефон:</strong> 8-800-123-45-67 (бесплатно по России)</p>
+              <p><strong>Email:</strong> support@example.com</p>
+              <p><strong>Часы работы:</strong> Пн-Пт: 9:00-18:00, Сб-Вс: 10:00-16:00</p>
+              <p><strong>Онлайн-чат:</strong> Круглосуточно на сайте</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Подвал сайта -->
+<footer class="bg-none text-light pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h2 class="h3 mb-3">SIGMOS</h2>
+        <div class="mb-3">
+          <strong>Оставайтесь на связи:</strong><br>
+          <span class="h5">8 800 000 00 00</span><br>
+          <small>с 08:30 по 22:00</small>
+        </div>
+        <div>
+          <strong>Адреса магазинов в г. Москве</strong>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="mb-3">В разных городах:</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">Москва</li>
+          <li class="mb-2">Санкт-Петербург</li>
+          <li class="mb-2">Нижний Новгород</li>
+          <li class="mb-2">Самара</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="mb-3">Покупателям:</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">Как оформить заказ</li>
+          <li class="mb-2">Способы оплаты</li>
+          <li class="mb-2">Кредиты</li>
+          <li class="mb-2">Доставка</li>
+          <li class="mb-2">Сервисные центры</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="mb-3">Юридическим лицам:</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">Проверка счета</li>
+          <li class="mb-2">Подарочные карты</li>
+          <li class="mb-2">Бонусная программа</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row pt-3 border-top border-secondary">
+      <div class="col-12 text-center">
+        <small>© 2024 SIGMOS. Все права защищены.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
