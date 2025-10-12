@@ -1,0 +1,67 @@
+:root {
+            --fill-color: #171717;
+            --stroke-color: #2E2E2E;
+        }
+        
+        .custom-accordion .accordion-item {
+            background-color: var(--fill-color);
+            border: 1px solid var(--stroke-color);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .custom-accordion .accordion-button {
+            background-color: var(--fill-color);
+            color: white;
+            border: none;
+            padding: 1rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .custom-accordion .accordion-button:not(.collapsed) {
+            background-color: var(--fill-color);
+            color: white;
+            box-shadow: none;
+        }
+        
+        .custom-accordion .accordion-button::after {
+            display: none;
+        }
+        
+        .custom-accordion .accordion-button .accordion-text {
+            flex-grow: 1;
+            text-align: left;
+        }
+        
+        .custom-accordion .accordion-button .arrow-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--stroke-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .custom-accordion .accordion-button:not(.collapsed) .arrow-circle {
+            transform: rotate(180deg);
+        }
+        
+        .custom-accordion .accordion-button .arrow-circle svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+        
+        .custom-accordion .accordion-body {
+            background-color: var(--fill-color);
+            color: #ddd;
+            border-top: 1px solid var(--stroke-color);
+        }
+        
+        .custom-accordion .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(46, 46, 46, 0.25);
+        }
