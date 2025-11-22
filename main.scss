@@ -1,2 +1,107 @@
 @import "./blocks/gradient/gradient.scss";
 @import "./blocks/accord/accord.scss";
+
+.nav-tabs {
+    border-bottom: 0 !important;
+    
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+.new-price {
+    color: #ffb700;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.product-card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.characteristics-list {
+    list-style: none;
+    padding: 0;
+}
+.characteristics-list li {
+    padding: 4px 0;
+}
+.review-card {
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+     margin-bottom: 20px;
+}
+.rating {
+    color: #ffc107;
+}
+
+.dark-search {
+  background-color: #1a1a1a !important;
+  border: 1px solid #404040 !important;
+  color: #ffffff !important;
+}
+
+.dark-search::placeholder {
+  color: #a0a0a0 !important;
+}
+
+.dark-search:focus {
+  background-color: #1a1a1a !important;
+  border-color: #606060 !important;
+  box-shadow: 0 0 0 0.2rem rgba(96, 96, 96, 0.25) !important;
+  color: #ffffff !important;
+}
+
+.dark-btn {
+    background-color: #1a1a1a !important;
+    border-color: #404040 !important;
+    color: #ffffff !important;
+        }
+        
+.dark-btn:hover {
+    background-color: #2a2a2a !important;
+    border-color: #606060 !important;
+        }
+
+.dark-card {
+    background-color: #1a1a1a !important;
+    border-color: #404040 !important;
+    color: #ffffff !important;
+        }
+
+.dark-card1 {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+        }
+
+.dark-card1:hover {
+    background-color: #2a2a2a !important;
+    border-color: #606060 !important;
+        }
+        
+.modal-content {
+    background-color: #1a1a1a;
+    color: #ffffff;
+        }
+        
+.form-control {
+    background-color: #2a2a2a;
+    border-color: #404040;
+    color: #ffffff;
+        }
+        
+.form-control:focus {
+    background-color: #2a2a2a;
+    border-color: #606060;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(96, 96, 96, 0.25);
+        }
+        
+.form-label {
+    color: #e0e0e0;
+        }
+        
+.btn-close {
+    filter: invert(1);
+        }
